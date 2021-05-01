@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <h1>ZEN BANK-LOGIN </h1>
+    </head>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        h1{
+            color: black;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+    <body>
+        user name &nbsp;&nbsp;<input type="text" name="username" placeholder="Enter Your user name"><br><br>
+        Password &nbsp;&nbsp;<input type="password" naem="password" placeholder="Enter the password" pattern="[a-zA-Z0-9_]{8,15}" minlength=8 maxlength=15 required><br><br>
+        <input type="checkbox" name="remember me" >Remember me <br><br>
+        <input type="submit" name="submit" value="sign in">&nbsp;&nbsp;
+        <input type="reset" name="reset" value="Clear">
+    </body>
+</html>
