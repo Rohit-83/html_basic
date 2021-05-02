@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <h1>A simple Form</h1>
+        <h3>Form Fundamentals</h3>
+    </head>
+    <body>
+        <form id="book form" autocomplete="on" >
+            <fieldset>
+                <legend>Customer Info</legend>
+                Name &nbsp;&nbsp; <input type="text" name="cusname" placeholder="Enter Your name" required autofocus><br><br>
+                Telephone &nbsp;&nbsp; <input type="tel" name="telephone" placeholder="Pattern: 234-567-8910" pattern="([0-9]{3})(-[0-9]{3})-8910]" required><br><br>
+                Email address &nbsp;&nbsp;<input type="email" placeholder="Enter your Email" multiple required name="mail"><br><br>
+
+                </legend>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Books
+                </legend>
+                <input type="text" name="book" list="books">
+                <datalist id="books">
+                    <option value="Html5"></option>
+                    <option value="java"></option>
+                    <option value="python"></option>
+                </datalist>&nbsp;&nbsp;
+                Quantity(Maximum 5) &nbsp;<input type="number" min="1" max="5" name="quantity">
+            </fieldset>
+        </form>
+    </body>
+</html>
